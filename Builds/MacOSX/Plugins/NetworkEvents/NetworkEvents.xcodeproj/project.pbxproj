@@ -183,8 +183,10 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/local/include,
+					/usr/local/include,
 				);
 				INFOPLIST_FILE = NetworkEvents/Info.plist;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(MAC_PACKAGE_DIR)/lib/libzmq.a",
@@ -204,8 +206,10 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/local/include,
+					/usr/local/include,
 				);
 				INFOPLIST_FILE = NetworkEvents/Info.plist;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(MAC_PACKAGE_DIR)/lib/libzmq.a",

@@ -171,11 +171,21 @@
 		E1F91DC91DBE588500FF13EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
 					"$(inherited)",
-					"$(MAC_PACKAGE_DIR)/lib/hdf5-18/include",
-					"$(MAC_PACKAGE_DIR)/include",
+					"DEBUG=1",
+					"_DEBUG=1",
 				);
+				HEADER_SEARCH_PATHS = (
+					"<Multiple",
+					"values>",
+					"$(MAC_HDF5_BASE)/include",
+					"/Users/adam/Documents/GitHub/OpenEphys/plugin-GUI/Source/Plugins/Headers/",
+					"$(MAC_PACKAGE_DIR)/include",
+					"/Users/adam/Documents/GitHub/OpenEphys/plugin-GUI/JuceLibraryCode/modules",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-Wl,-force_load,$(MAC_PACKAGE_DIR)/lib/libsz.a",
@@ -189,11 +199,16 @@
 		E1F91DCA1DBE588500FF13EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(MAC_PACKAGE_DIR)/lib/hdf5-18/include",
+					"<Multiple",
+					"values>",
+					"$(MAC_HDF5_BASE)/include",
+					"/Users/adam/Documents/GitHub/OpenEphys/plugin-GUI/Source/Plugins/Headers/",
 					"$(MAC_PACKAGE_DIR)/include",
+					"/Users/adam/Documents/GitHub/OpenEphys/plugin-GUI/JuceLibraryCode/modules",
 				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-Wl,-force_load,$(MAC_PACKAGE_DIR)/lib/libsz.a",

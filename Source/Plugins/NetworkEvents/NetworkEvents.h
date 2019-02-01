@@ -32,6 +32,7 @@
         #include <zmq_utils.h>
     #else
         #include <zmq.h>
+//AW modified from #include <zmq.h> to </usr/local/include/zmq.h>
     #endif
 #endif
 

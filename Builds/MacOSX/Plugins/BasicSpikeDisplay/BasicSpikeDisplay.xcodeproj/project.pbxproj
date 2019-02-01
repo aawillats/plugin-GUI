@@ -141,7 +141,7 @@
 		E1F557E01C9B0C600035F88B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Open Ephys";
 				TargetAttributes = {
 					E1F557E71C9B0C600035F88B = {
@@ -197,6 +197,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1F557F31C9B0CA90035F88B /* Plugin_Debug.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 			};
 			name = Debug;
 		};
@@ -204,12 +212,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1F557F41C9B0CA90035F88B /* Plugin_Release.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 			};
 			name = Release;
 		};
 		E1F557EF1C9B0C600035F88B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				INFOPLIST_FILE = BasicSpikeDisplay/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.open-ephys.gui.plugin.BasicSpikeDisplay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -219,6 +236,7 @@
 		E1F557F01C9B0C600035F88B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				INFOPLIST_FILE = BasicSpikeDisplay/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.open-ephys.gui.plugin.BasicSpikeDisplay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
